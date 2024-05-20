@@ -360,8 +360,8 @@ class Users(object):
             storeHashesToFile(kb.data.cachedUsersPasswords)
 
             message = "do you want to perform a dictionary-based attack "
-            message += "against retrieved password hashes? [Y/n/q]"
-            choice = readInput(message, default='Y').upper()
+            message += "against retrieved password hashes? [y/N/q]"
+            choice = readInput(message, default='N').upper()
 
             if choice == 'N':
                 pass
